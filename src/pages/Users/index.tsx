@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
 import UserCard from "../../components/User/User";
-import BreadCrums from "../../components/Breadcrums";
+import BreadCrums from "../../components/BreadCrumbs/BreadCrumbs";
 
 import { getUsers, userListData } from "../../redux/slice/UserSlice";
 import { useNavigate } from "react-router-dom";

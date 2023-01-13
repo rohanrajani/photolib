@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
-import BreadCrums from "../../components/Breadcrums";
+import BreadCrums from "../../components/BreadCrumbs/BreadCrumbs";
 import { useParams } from "react-router-dom";
 import { updateCrums } from "../../redux/slice/BreadCrumbsSlice";
 import { useNavigate } from "react-router-dom";

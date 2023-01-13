@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
 import { useParams } from "react-router-dom";
-import BreadCrums from "../../components/Breadcrums";
+import BreadCrums from "../../components/BreadCrumbs/BreadCrumbs";
 import PhotoCard from "../../components/Photo/Photo";
 import PhotoModel from "../../components/PhotoModel/PhotoModel";
 
