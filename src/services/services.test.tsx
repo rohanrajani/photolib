@@ -1,9 +1,9 @@
 import axios from "axios";
-import { getAllUsers } from "../services/userServices";
-import { getUserAlbumList } from "../services/albemServices";
-import { getAlbumPhotoList } from "../services/photoServices";
+import { getAllUsers } from "./userServices";
+import { getUserAlbumList } from "./albemServices";
+import { getAlbumPhotoList } from "./photoServices";
 
-import { userMock, albumMock, photoMock } from "./mock";
+import { userMock, albumMock, photoMock } from "../mock/mock";
 
 jest.mock("axios");
 

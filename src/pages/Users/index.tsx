@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
+import { useAppSelector, useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
-import UserCard from "../../components/user";
-import BreadCrums from "../../components/breadcrums";
+import UserCard from "../../components/User/User";
+import BreadCrums from "../../components/Breadcrums";
 
-import { getUsers, userListData } from "./slice";
+import { getUsers, userListData } from "../../redux/slice/UserSlice";
 import { useNavigate } from "react-router-dom";
 
-import { updateCrums } from "../../components/breadcrums/slice";
+import { updateCrums } from "../../redux/slice/BreadCrumbsSlice";
 
 function Users() {
   const list = useAppSelector(userListData);

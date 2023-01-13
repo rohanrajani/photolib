@@ -1,7 +1,7 @@
 import * as React from "react";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks/hooks";
 import { useNavigate } from "react-router-dom";
-import { breadCrumsData, updateCrums } from "../../components/breadcrums/slice";
+import { breadCrumsData, updateCrums } from "../../redux/slice/BreadCrumbsSlice";
 
 function BreadCrums(props: any) {
   const nevigate = useNavigate();

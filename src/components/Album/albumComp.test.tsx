@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { albumMock } from "./mock";
-import AlbumCard from "../components/album";
+import { albumMock } from "../../mock/mock";
+import AlbumCard from "./Album";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("AlbumData Loading", () => {

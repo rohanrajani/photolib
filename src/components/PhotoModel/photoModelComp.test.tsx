@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { photoMock } from "./mock";
-import PhotoModel from "../components/photoModel";
+import { photoMock } from "../../mock/mock";
+import PhotoModel from "./PhotoModel";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("PhotoModel Loading", () => {

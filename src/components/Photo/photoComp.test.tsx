@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { photoMock } from "./mock";
-import PhotoCard from "../components/photo";
+import { photoMock } from "../../mock/mock";
+import PhotoCard from "./Photo";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("PhotoData Loading", () => {

@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { userMock } from "./mock";
-import UserCard from "../components/user";
+import { userMock } from "../../mock/mock";
+import UserCard from "./User";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("UserData Loading", () => {

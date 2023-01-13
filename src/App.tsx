@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/header";
+import Header from "./components/Header/Header";
 import RootRouter from "./routers";
 import { Container } from "@mui/system";
 

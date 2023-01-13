@@ -1,8 +1,8 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import userReducer from '../pages/Users/slice';
-import userAlbumReducer from '../pages/Albums/slice';
-import albumPhotoReducer from '../pages/Photos/slice';
-import breadcrumsReducer from '../components/breadcrums/slice';
+import userReducer from '../slice/UserSlice';
+import userAlbumReducer from '../slice/AlbumSlice';
+import albumPhotoReducer from '../slice/PhotoSlice';
+import breadcrumsReducer from '../slice/BreadCrumbsSlice';
 
 export const store = configureStore({
   reducer: {

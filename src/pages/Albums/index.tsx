@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useAppDispatch } from "../../app/hooks";
+import { useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
-import BreadCrums from "../../components/breadcrums";
+import BreadCrums from "../../components/Breadcrums";
 import { useParams } from "react-router-dom";
-import { updateCrums } from "../../components/breadcrums/slice";
+import { updateCrums } from "../../redux/slice/BreadCrumbsSlice";
 import { useNavigate } from "react-router-dom";
 
-import AlbumCard from "../../components/album";
+import AlbumCard from "../../components/Album/Album";
 
-import { getUserAlbums } from "./slice";
+import { getUserAlbums } from "../../redux/slice/AlbumSlice";
 
 function Albums() {
   const { id } = useParams();

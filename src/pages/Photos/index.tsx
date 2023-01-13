@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useAppDispatch } from "../../app/hooks";
+import { useAppDispatch } from "../../redux/hooks/hooks";
 import { Grid } from "@mui/material";
 import { useParams } from "react-router-dom";
-import BreadCrums from "../../components/breadcrums";
-import PhotoCard from "../../components/photo";
-import PhotoModel from "../../components/photoModel";
+import BreadCrums from "../../components/Breadcrums";
+import PhotoCard from "../../components/Photo/Photo";
+import PhotoModel from "../../components/PhotoModel/PhotoModel";
 
-import { getAlbumPhotos } from "./slice";
+import { getAlbumPhotos } from "../../redux/slice/PhotoSlice";
 
 function Albums() {
   const { albumId } = useParams();
